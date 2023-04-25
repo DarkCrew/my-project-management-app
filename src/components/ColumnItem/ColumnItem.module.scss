@@ -1,0 +1,121 @@
+@import url('../../variables/Variables.module.scss');
+
+.board {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 370px;
+  min-width: 370px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: var(--color-darkgray);
+  box-sizing: border-box;
+}
+
+.boardTitle {
+  position: relative;
+  font-size: 20px;
+  color: var(--color-white);
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--color-green);
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+
+    img {
+      height: 100%;
+      width: 20px;
+      object-fit: contain;
+      transition: 0.5s;
+    }
+  }
+
+  button:hover {
+    img {
+      filter: brightness(80%);
+    }
+  }
+}
+
+.filterContainer {
+  height: 100%;
+  overflow-y: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  overflow-y: scroll;
+  border-radius: 20px;
+  padding: 10px;
+  background: var(--color-darkpurple);
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-family: 'Montserrat-Regular';
+    background: var(--color-darkgray);
+    transition: 0.5s;
+    box-sizing: border-box;
+  }
+
+  li:hover {
+    background: var(--color-purple);
+  }
+
+  .deleteBtn {
+    font-size: 20px;
+    color: var(--color-white);
+    font-family: 'Montserrat-Regular';
+    cursor: pointer;
+    background: transparent;
+    transition: 0.5s;
+  }
+
+  .deleteBtn:hover {
+    filter: brightness(80%);
+  }
+}
+
+.addItem {
+  font-size: 20px;
+  color: var(--color-white);
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  background: transparent;
+}
+
+.addItem:hover {
+  background: var(--color-darkpurple);
+}

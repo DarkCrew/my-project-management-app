@@ -1,0 +1,68 @@
+@import url('../../variables/Variables.module.scss');
+
+.notfound {
+  background: var(--color-darkpurple);
+}
+
+.container {
+  padding: 40px 0;
+}
+
+.mainContainer {
+  min-height: calc(100vh - 145px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  img {
+    height: 350px;
+    object-fit: contain;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  gap: 20px;
+}
+
+.title {
+  font-family: 'Montserrat-Bold';
+  font-size: 78px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.subtitle {
+  font-family: 'Montserrat-Regular';
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.advice {
+  font-family: 'Montserrat-Regular';
+  font-size: 16px;
+  color: var(--color-white);
+  filter: brightness(80%);
+}
+
+.btnHome {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  width: 250px;
+  color: var(--color-white);
+  font-family: 'Montserrat-Regular';
+  padding: 15px 0;
+  background: var(--color-green);
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.btnHome:hover {
+  filter: brightness(80%);
+}

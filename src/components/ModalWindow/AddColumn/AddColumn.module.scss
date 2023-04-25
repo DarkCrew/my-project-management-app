@@ -1,0 +1,45 @@
+@import url('../../../variables/Variables.module.scss');
+
+.title {
+  font-size: 24px;
+  font-family: 'Montserrat-Bold';
+  color: var(--color-darkpurple);
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40%;
+    font-size: 18px;
+    color: var(--color-darkpurple);
+  }
+
+  input {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    border: 2px solid var(--color-darkpurple);
+    color: var(--color-darkpurple);
+    border-radius: 20px;
+    padding: 5px 20px;
+    width: 60%;
+  }
+}
+
+.createButton {
+  font-family: 'Montserrat-Bold';
+  color: var(--color-darkpurple);
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  background: var(--color-green);
+}
+
+.createButton:hover {
+  filter: brightness(80%);
+}

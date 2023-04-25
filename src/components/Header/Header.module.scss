@@ -1,0 +1,143 @@
+@import url('../../variables/Variables.module.scss');
+
+.header,
+.headerActive {
+  position: sticky;
+  top: 0;
+}
+.header {
+  background-color: var(--color-darkgray);
+  transition: 1s;
+}
+.headerActive {
+  background-color: var(--color-nightgray);
+  -webkit-box-shadow: 0px 22px 27px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 22px 27px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 22px 27px 0px rgba(0, 0, 0, 0.19);
+  transition: 1s;
+}
+
+.container {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 100%;
+  a {
+    display: flex;
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      transition: 0.5s;
+    }
+  }
+
+  a:hover {
+    img {
+      filter: invert(54%) sepia(93%) saturate(552%) hue-rotate(360deg) brightness(102%)
+        contrast(101%);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  height: 40px;
+  gap: 30px;
+  font-family: 'Montserrat-Bold';
+  font-size: 18px;
+
+  li {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    transition: 1s;
+    cursor: pointer;
+    a {
+      color: var(--color-white);
+      transition: 1s;
+    }
+    a:hover {
+      color: var(--color-orange);
+    }
+    img {
+      height: 100%;
+    }
+  }
+  li:hover {
+    color: var(--color-orange);
+  }
+}
+
+.box {
+  display: flex;
+  height: 100%;
+  background-color: var(--color-purple);
+  border-radius: 20px;
+
+  img {
+    padding: 2px 10px;
+  }
+}
+
+.box select {
+  background-color: var(--color-purple);
+  border-radius: 20px;
+  padding: 0 10px;
+  color: var(--color-white);
+  height: 100%;
+  border: none;
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  font-size: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box select:hover {
+  color: var(--color-orange);
+}
+
+.box:hover::before {
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.itemSignIn,
+.itemSignUp,
+.itemSignOut {
+  height: 100%;
+  padding: 5px 0;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.itemSignOut {
+  padding: 5px 15px;
+  background: var(--color-blue);
+  border-radius: 20px;
+}
+
+.itemSignUp {
+  padding: 5px 15px;
+  background: var(--color-red);
+  border-radius: 20px;
+}

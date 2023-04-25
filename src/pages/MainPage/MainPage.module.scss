@@ -1,0 +1,16 @@
+@import url('../../variables/Variables.module.scss');
+
+.home {
+  background: var(--color-darkpurple);
+}
+
+.container {
+  padding: 40px 0;
+}
+
+.mainContainer {
+  min-height: calc(100vh - 145px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

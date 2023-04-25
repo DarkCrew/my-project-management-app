@@ -1,0 +1,22 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-darkpurple: #1f1d2c;
+  --color-darkgray: #262837;
+  --color-nightgray: #1e202c;
+  --color-orange: #ffa000;
+  --color-purple: #806dff;
+  --color-blue: #03a9f4;
+  --color-red: #ff5252;
+  --color-green: #4ab178;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../assets/fonts/Montserrat-Regular.ttf');
+}

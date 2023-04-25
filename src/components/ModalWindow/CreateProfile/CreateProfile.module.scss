@@ -1,0 +1,40 @@
+@import url('../../../variables/Variables.module.scss');
+
+.answerImage {
+  height: 70px;
+  filter: invert(94%) sepia(8%) saturate(4259%) hue-rotate(208deg) brightness(91%) contrast(86%);
+  object-fit: contain;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'Montserrat-Bold';
+  color: var(--color-darkpurple);
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.buttonYes,
+.buttonNo {
+  font-family: 'Montserrat-Bold';
+  color: var(--color-darkpurple);
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.buttonYes {
+  background: var(--color-green);
+}
+.buttonNo {
+  background: var(--color-orange);
+}
+
+.buttonYes:hover,
+.buttonNo:hover {
+  filter: brightness(80%);
+}

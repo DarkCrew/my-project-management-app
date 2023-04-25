@@ -1,0 +1,79 @@
+@import url('../../variables/Variables.module.scss');
+
+.boards {
+  background: var(--color-darkpurple);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: calc(100vh - 150px);
+  padding: 40px 0;
+}
+
+.mainContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+.backButton {
+  width: 30px;
+  min-width: 30px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: var(--color-white);
+    background: var(--color-darkgray);
+    font-family: 'Montserrat-Bold';
+    transition: 0.5s;
+  }
+
+  button:hover {
+    background: var(--color-purple);
+  }
+}
+
+.addButton {
+  display: flex;
+  width: 370px;
+  min-width: 370px;
+  flex-direction: column;
+}
+
+.buttonAddContainer {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: var(--color-darkgray);
+}
+
+.addColumnButton {
+  width: 100%;
+  font-size: 20px;
+  color: var(--color-white);
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--color-darkpurple);
+  transition: 0.5s;
+}
+
+.addColumnButton:hover {
+  background: var(--color-green);
+}

@@ -1,0 +1,74 @@
+@import url('../../variables/Variables.module.scss');
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--color-darkgray);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.board:hover {
+  background: var(--color-purple);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Montserrat-Bold';
+  color: var(--color-white);
+  gap: 50px;
+  height: 100%;
+}
+
+.boardNumber {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+
+  .number {
+    min-width: 70px;
+    font-size: 22px;
+    font-family: 'Montserrat-Regular';
+    color: var(--color-white);
+  }
+}
+
+.boardImage {
+  height: 100%;
+  object-fit: contain;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat-Regular';
+  color: var(--color-white);
+  height: 100%;
+}
+
+.bin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  height: 100%;
+}
+
+.binImage {
+  height: 70%;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.binImage:hover {
+  filter: invert(94%) sepia(8%) saturate(4259%) hue-rotate(208deg) brightness(91%) contrast(86%);
+}
