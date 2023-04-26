@@ -119,7 +119,7 @@ const SignUpPage = (): ReactElement => {
                 <button type="submit" className={styles.signUpBtn}>
                   Sign up
                 </button>
-                <Link className={styles.accountExist} to="singin">
+                <Link className={styles.accountExist} to="/signin">
                   I have an account
                 </Link>
               </form>

@@ -65,8 +65,8 @@ const HomePage = (): ReactElement => {
                   <img src={kirillImage} alt="developerPhoto" />
                 </div>
                 <p className={styles.developerSubtitle}>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the 1500s
+                  Developed the entire design of the application. And also developed all the
+                  functionality of the application.
                 </p>
               </a>
               <a
@@ -80,8 +80,7 @@ const HomePage = (): ReactElement => {
                   <img src={igorImage} alt="developerPhoto" />
                 </div>
                 <p className={styles.developerSubtitle}>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the 1500s
+                  Performed code analysis and application testing.
                 </p>
               </a>
               <a
@@ -95,8 +94,8 @@ const HomePage = (): ReactElement => {
                   <img src={nikolayImage} alt="developerPhoto" />
                 </div>
                 <p className={styles.developerSubtitle}>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry standard dummy text ever since the 1500s
+                  Created a project plan. And also worked with connecting the database and creating
+                  queries to the database.
                 </p>
               </a>
             </div>
